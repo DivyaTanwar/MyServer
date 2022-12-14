@@ -8,32 +8,40 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <script type="text/javascript" src="js/form.js" defer></script>
-    <title>Document</title>
+    <title>Students GPA</title>
 </head>
 <body>
-  <h1>Enquiry Form</h1>
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="/">Students Info Form</a><br>
+      </li>
+      <li>
+        <a href="/dataList">Data List</a>
+      </li>
+    </ul>
+  </nav>
     <section class="main">
-        <form name="eform" method="Post" onsubmit="return formSubmit();"  action="" >
+        <form name="eform" method="Post" onsubmit="return formSubmit();"   action="" >
 
           <label>Student Number</label>
           <input id="number" placeholder="Cc1234567" type="text" name="number"><br/>
 
-          <label>Name</label>
-          <input id="name" placeholder="First Last" type="text" name="name"><br/>
+          <label>Semester-1 GPA</label>
+          <input id="semester1" placeholder="Semester-1 GPA" type="gpa" name="semester1"><br/>
     
-          <label>Email</label>
-          <input id="email" placeholder="email@domain.com" type="text" name="email"><br/>
-    
-          <label>Postal Code</label>
-          <input id="postalcode" placeholder="X9X 9X9" type="postalcode" name="postalcode"><br/>
+          <label>Semester-2 GPA</label>
+          <input id="semester2" placeholder="Semester-2 GPA" type="gpa" name="semester2"><br/>
 
+          <label>Semester-3 GPA</label>
+          <input id="semester3" placeholder="Semester-3 GPA" type="gpa" name="semester3"><br/>
+    
           <input type="submit" value="Submit">
           <p id="errors"></p>
         </form> 
     </section> 
 
     <section class="main">
-      <h2>Receipt</h2>
         <div class="formData">
       <%
         if(typeof(errors) != 'undefined')
@@ -55,10 +63,10 @@
       <%
         }
       %>
-      <p id="formResult">Details:</p>
+      <p id="formResult">Details of the students Info entered:</p>
       <table>
         <tr>
-          <th>studentNumber:</th>
+          <th>Student Number:</th>
           <% if(typeof(number) != 'undefined')
           {
           %>
@@ -68,32 +76,31 @@
           %>
         </tr>
         <tr>
-          <th>Name:</th>
-
-          <% if(typeof(name) != 'undefined')
+          <th>Semester-1:</th>
+          <% if(typeof(semester1) != 'undefined')
           {
           %>
-            <td> <%= name %> </td>
+            <td> <%= semester1 %> </td>
           <%
           }
           %>
         </tr>
         <tr>
-          <th>Email:</th>
-          <% if(typeof(email) != 'undefined')
+          <th>Semester-2:</th>
+          <% if(typeof(semester2) != 'undefined')
           {
           %>
-            <td> <%= email %> </td>
+            <td> <%= semester2 %> </td>
           <%
           }
           %>
         </tr>
         <tr>
-          <th>Postal Code:</th>
-          <% if(typeof(postalcode) != 'undefined')
+          <th>Semester-3:</th>
+          <% if(typeof(semester3) != 'undefined')
           {
           %>
-            <td> <%= postalcode %> </td>
+            <td> <%= semester3 %> </td>
           <%
           }
           %>

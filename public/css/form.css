@@ -1,6 +1,6 @@
 body{
-    background-color: #e7f8c3;
-    font-family: 'Kalam', cursive;
+    background-color: #e7af5a;
+    /* font-family: 'Kalam', cursive; */
     font-size: 20px;
     width: 960px;
     margin: 50px auto;
@@ -26,8 +26,8 @@ form, .formData{
     padding: 30px;
     margin: 50px auto;
     color: white;
-    background-color: #f5aadc;
-    border-radius: 20px;
+    background-color: #df8507;
+    border-radius: 10px;
 }
 label{
     width: 170px;
@@ -37,7 +37,7 @@ label{
 }
 input:not([type="radio"]), select{
     font-size: 16px;
-    font-family: 'Kalam', cursive;
+    /* font-family: 'Kalam', cursive; */
     padding: 5px 10px;
 }
 input:not([type="radio"]){
@@ -52,9 +52,9 @@ select{
 input[type="submit"]{
     width: 100%;
     font-size: 22px;
-    background-color: #b8539d;
+    background-color: #643203;
     color: rgb(214, 140, 140);
-    font-family: 'Kalam', cursive;
+    /* font-family: 'Kalam', cursive; */
     border: 0px;
     padding: 10px;
     height: 50px;
@@ -67,12 +67,12 @@ input[type="submit"]:active{
     
 }
 
-.top_menu{
-    background-color: #99b995;
+.menu{
+    background-color: #6be4f4;
     border: 3px solid white;
     box-shadow: 0 0 10px #2c2c2c;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 h1, h2{
     background-color: #6be4f4;
@@ -83,24 +83,34 @@ h1, h2{
     text-align: center;
 }
 
-.top_menu ul{
+.menu ul{
     list-style-type: none;
     text-align: center;
     margin: 0;
+    padding: 0px, 0px, 0px,0px;
 }
 
-.top_menu ul li{
+.menu ul li{
     display: inline-block;
-    width: 130px;
+    width: 450px;
+    background-color: #058cb5;
+  
 }
 
-.top_menu ul li:hover{
-    background-color: #3f9cc1;
+.menu ul li:hover{
+    background-color: #eb811e;
+    /* max-width: fit-content; */
 }
-.top_menu ul li a{
+.menu ul li a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 0;
-    display: block;
+    padding: 9px 0;
+    display:inline-block;
 }
+
+table, th, td {
+    border: 1px solid;
+    width: 100%;
+    color:rgb(23, 24, 26);
+  }
